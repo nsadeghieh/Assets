@@ -607,7 +607,7 @@ class Manager
 	 */
 	protected function assetIsFromPackage($asset)
 	{
-		if(preg_match('{^([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+):(.*)$}', $asset, $matches))
+		if(preg_match('{^([A-Za-z0-9_.-]*)/([A-Za-z0-9_.-]*):(.*)$}', $asset, $matches))
 			return array_slice($matches, 1, 3);
 
 		return false;
